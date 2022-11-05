@@ -1,0 +1,123 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.form-area {
+    width: 45%;
+}
+
+.form-area > h3 {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact-form > textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-area > p {
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-inputs {
+    display: flex;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.name-container:first-child {
+    margin-right: 7px;
+}
+
+.name-container:last-child {
+    margin-left: 7px;
+}
+
+#first_name, #last_name {
+    
+}
+
+.form-input {
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 7px;
+    border: 1px solid rgb(181, 179, 179);
+    margin-bottom: 10px;
+}
+
+.non-name-input {
+    /* width: 100%; */
+}
+
+.label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.checkbox-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 8px;
+}
+
+.checkbox-container > label {
+    font-size: .9rem;
+}
+
+.checkbox-container > input {
+    margin-right: 5px;
+}
+
+#btn__submit {
+    border: none;
+    border-radius: 5px;
+    background-color: #1570EF;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.error-msg {
+    color: red;
+    font-size: .9rem;
+}
+
+
+@media screen and (max-width: 850px) {
+    .form-area {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .form-area {
+        width: 90%;
+    }
+
+    .name-inputs {
+        flex-direction: column;
+    }
+
+    .name-container:first-child {
+        margin-right: 0;
+    }
+    
+    .name-container:last-child {
+        margin-left: 0;
+    }
+}
