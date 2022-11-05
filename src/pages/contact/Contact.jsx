@@ -45,7 +45,7 @@ function Contact() {
 
                     <div className='checkbox-container'>
                     <input type='checkbox' required />
-                    <label htmlFor="">You agree to providing your data to Bunde Uji who may contact you.</label>
+                    <label htmlFor="">You agree to providing your data to Bunde who may contact you.</label>
                     </div>
                     
                     <button type='submit' id='btn__submit'>Send message</button>
