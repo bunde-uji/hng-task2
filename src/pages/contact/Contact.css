@@ -96,6 +96,10 @@
     font-size: .9rem;
 }
 
+.error {
+    outline: red solid 1px;
+}
+
 
 @media screen and (max-width: 850px) {
     .form-area {

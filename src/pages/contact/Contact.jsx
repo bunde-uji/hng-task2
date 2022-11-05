@@ -40,11 +40,11 @@ function Contact() {
                     <input type="email" id="email" placeholder='yourname@email.com' className='form-input non-name-input' />
 
                     <label htmlFor="message" className='label'>Message</label>
-                    <textarea name="" placeholder="Send me a message and I'll reply you as soon as possible" id="message" cols="30" rows="5" className='form-input non-name-input' ref={messageRef}></textarea>
+                    <textarea name="" placeholder="Send me a message and I'll reply you as soon as possible" id="message" cols="30" rows="5" className={`form-input non-name-input ${isError ? 'error' : ''}`} ref={messageRef}></textarea>
                     {isError && <p className='error-msg'>{errorMsg}</p>}
 
                     <div className='checkbox-container'>
-                    <input type='checkbox' />
+                    <input type='checkbox' required />
                     <label htmlFor="">You agree to providing your data to Bunde Uji who may contact you.</label>
                     </div>
                     
